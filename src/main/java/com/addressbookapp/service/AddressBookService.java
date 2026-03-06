@@ -24,5 +24,17 @@ public class AddressBookService {
         for(Contact contact : contactList){
             System.out.println(contact);
         }
+    } 
+    
+    public Contact findContact(String firstName) {
+
+        for (Contact contact : contactList) {
+            if (contact.getFirstName().equalsIgnoreCase(firstName)) {
+                return contact;
+            }
+        }
+
+        return null;
     }
+    
 }
