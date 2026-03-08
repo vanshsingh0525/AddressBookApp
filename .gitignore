@@ -27,7 +27,7 @@ replay_pid*
 /.metadata/
 # Eclipse specific files
 .metadata/
-. settings/
+.settings/
 .classpath
 .project
 
