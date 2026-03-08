@@ -48,11 +48,22 @@ public class AddressBookServiceTest {
         // Step 5: Verify DB data == expected data
         Assertions.assertEquals(expected, dbContact);
     }
- 
+
     @Test
     public void givenDatabase_whenContactsRetrieved_shouldReturnList() {
 
         List<Contact> contacts = service.getContactsFromDatabase();
+
+        Assertions.assertNotNull(contacts);
+    }
+    
+    @Test
+    public void givenDateRange_whenContactsRetrieved_shouldReturnList(){
+
+        AddressBookService service = new AddressBookService();
+
+        List<Contact> contacts =
+                service.getContactsByDateRange("2024-01-01","2030-01-01");
 
         Assertions.assertNotNull(contacts);
     }
