@@ -1,0 +1,22 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Akash",
+      "lastName": "Sharma",
+      "city": "Bhopal",
+      "state": "MP",
+      "phoneNumber": "9999999999",
+      "email": "akash@test.com"
+    },
+    {
+      "id": 2,
+      "firstName": "Ravi",
+      "lastName": "Verma",
+      "city": "Indore",
+      "state": "MP",
+      "phoneNumber": "8888888888",
+      "email": "ravi@test.com"
+    }
+  ]
+}
